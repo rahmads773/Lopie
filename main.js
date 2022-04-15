@@ -11,7 +11,6 @@ const a_full = () => {
     span2.classList.toggle("span2");
     span1.classList.toggle("span1");
     span3.classList.toggle("span3");
-    menuIcon.classList.toggle("height")
 }
 
 // remove full function
@@ -20,15 +19,10 @@ const re_full = () => {
     span2.classList.remove("span2");
     span1.classList.remove("span1");
     span3.classList.remove("span3");
-    menuIcon.style.height = "16px";
     menuIcon.classList.remove("active_icon");
 }
 
 menuIcon.addEventListener("click", () => {
-    // if (full.classList.contains("active-full")) {
-    //     menuIcon.style.height = "16px";
-    //     console.log("true")
-    // }
   a_full()
   fullScreen();
 });
@@ -336,3 +330,15 @@ window.onscroll = () => {
     scroll.style.display = "none";
   }
 };
+
+
+// loading page
+
+let loading = document.querySelector(".loading")
+
+window.addEventListener("load",() => {
+loading.classList.add("loadin-done")
+setTimeout(() => {
+  loading.style.display ="none"
+}, 9000);
+})
