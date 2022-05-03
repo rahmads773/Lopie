@@ -27,7 +27,7 @@
     --second-text-color:#3F3D56;
     --main-transition:.5s;
     --main-padding:50px;
-    --anim-transition:1.7s;
+    --anim-transition:1s;
   }
   .container {
     padding-right: 15px;
