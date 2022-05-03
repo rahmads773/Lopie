@@ -305,7 +305,7 @@ header .shop-list .list .text p{
   bottom: 0;
   background-color: var(--my-black);
  display: none;
-animation: full_screen 1.5s 1 linear;
+animation: full_screen 1s 1 linear;
 }
 .active-full{
   display: flex;
